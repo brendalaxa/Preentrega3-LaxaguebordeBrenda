@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ecomerce</title>
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!-- link bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- link de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-bg">
+      <div class="header-envios">
+        Envios sin cargo desde 30.000 pesos - <span class="nros">3</span> y
+        <span class="nros">6</span> cuotas sin interes
+      </div>
+
+      <div
+        class="iniciar-sesion d-flex justify-content-lg-between justify-content-center align-items-center"
+      >
+        <a class="logo" href="../index.html"
+          ><img src="../imagenes/logoipsum-274.svg" alt="logo "
+        /></a>
+
+        <div class="header-registro">
+          <a class="header-registrarse me-1" href="#">REGISTRARSE</a>
+          <a class="header-iniciarSesion ms-1" href="#">INICIAR SESION</a>
+
+          <button
+            type="button"
+            class="btn btn-link header-cart"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="bi bi-cart3"></i>
+          </button>
+
+          <!--------- Modal shopping-cart------------------>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Carrito de compras
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="producto-modal">
+                    <div class="row-card row">
+                      <div class="col-4 img-modal">
+                        <img src="" alt="" />
+                      </div>
+
+                      <div class="col-8">
+                        <p class="modal-nombre"></p>
+
+                        <p class="modal-precio position-absolute"></p>
+
+                        <div class="input-group achicar mb-3">
+                          <button type="button" class="btn btn-link">
+                            <i class="bi bi-dash"></i>
+                          </button>
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Username"
+                            aria-describedby="basic-addon1"
+                          />
+
+                          <button type="button" class="btn btn-link">
+                            <i class="bi bi-plus"></i>
+                          </button>
+                        </div>
+                        <button
+                          type="button"
+                          id="btn-trash"
+                          class="btn position-absolute top-0 end-0 btn-link"
+                        >
+                          <i class="bi bi-trash btn-eliminar"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Vaciar carrito
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Finalizar compra
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-suma-cart rounded-circle">0</div>
+        </div>
+      </div>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="#" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/preguntasFrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- -----------------------------PRODUCT CARDS--------------- -->
+
+      <div id="cards" class="card-container container">
+        <!-- ---------------este es el contenedor de las tarjetas del catalogo ---------->
+      </div>
+
+      <!-- whatsup -->
+      <a
+        class="whatsup-fixed"
+        href="https://wa.me/5491136254764"
+        target="_blank"
+        ><i class="bi icon-whatsup-fixed bi-whatsapp"></i
+      ></a>
+
+      <!-- section newsletter -->
+      <section class="newsletter">
+        <h2 class="big-text">Recibí todas nuestras ofertas</h2>
+        <p class="small-p">
+          Enterate de todas las ofertas que tenemos ¡Registrate y empeza a
+          disfrutarlas!
+        </p>
+
+        <div class="input-group newsletter-email input-group-lg">
+          <span class="input-group-text texto-email" id="inputGroup-sizing-lg"
+            >Email</span
+          >
+          <input
+            type="text"
+            class="form-control email"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid container-foot">
+        <div class="row">
+          <div class="foot-direccion col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Direccion: El Airampu 3760</p>
+          </div>
+          <div class="foot-horario col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Horarios: Lunes a Sabado de 10 a 20 Hs</p>
+          </div>
+
+          <div class="foot-iconos col-sm-12 col-md-6 d-flex foot-div">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-whatsapp foot-icon"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-instagram foot-icon"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-geo-alt-fill foot-icon"></i
+            ></a>
+          </div>
+          <div class="foot-copyrigth col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Copyright © 2023 by Brenda Laxagueborde</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script javaScript -->
+    <script src="../app/app.js"></script>
+  </body>
+</html>

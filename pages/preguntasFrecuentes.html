@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas Frecuentes</title>
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!-- link bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- link de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-bg">
+      <div class="header-envios">
+        Envios sin cargo desde 30.000 pesos - <span class="nros">3</span> y
+        <span class="nros">6</span> cuotas sin interes
+      </div>
+
+      <div
+        class="iniciar-sesion d-flex justify-content-lg-between justify-content-center align-items-center"
+      >
+        <a class="logo" href="../index.html"
+          ><img src="../imagenes/logoipsum-274.svg" alt="logo"
+        /></a>
+
+        <div class="header-registro">
+          <a class="header-registrarse me-1" href="#">REGISTRARSE</a>
+
+          <a class="header-iniciarSesion ms-1" href="#">INICIAR SESION</a>
+
+          <button
+            type="button"
+            class="btn btn-link header-cart"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="bi bi-cart3"></i>
+          </button>
+
+          <!-- Modal shopping-cart-->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-suma-cart rounded-circle">0</div>
+        </div>
+      </div>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="#" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/preguntasFrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- section politicas de cambio -->
+      <section>
+        <div class="preguntasFrecuentes-titulo">POLITICA DE CAMBIO</div>
+        <p class="preguntasFrecuentes-parrafo">
+          Tenés 30 días desde el momento del pago para realizar el cambio, el
+          producto se debe encontrar en perfecto estado junto con la etiqueta y
+          la bolsa original. <br />
+          <br />
+          Sí o sí presentar el ticket de cambio. <br />
+          <br />
+          Para cambios de compras online deberás comunicarte previamente por
+          Whatsapp para coordinar gestión y envío. Los gastos de envío por
+          cambios corren por cuenta del cliente. <br />
+          <br />
+          Si compraste online y elegiste la opción de retirar en local tenés 30
+          días para retirarlo. <br />
+          <br />
+        </p>
+      </section>
+      <!-- section como comprar -->
+      <section>
+        <div class="preguntasFrecuentes-titulo">COMO COMPRAR</div>
+        <p class="preguntasFrecuentes-parrafo">
+          Elegi el producto que quieras comprar, talle y agregalo al carrito.
+          <br />
+          <br />
+          Para sumar mas prendas haz click en "ver mas productos", una vez
+          completado el carrito "iniciar compra"
+          <br />
+          <br />
+
+          Completa tus datos correctamente ya que te llegara un mail con la
+          confirmación de la compra.
+        </p>
+      </section>
+    </main>
+    <!-- footer! -->
+    <footer>
+      <div class="container-fluid container-foot">
+        <div class="row">
+          <div class="foot-direccion col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Direccion: El Airampu 3760</p>
+          </div>
+          <div class="foot-horario col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Horarios: Lunes a Sabado de 10 a 20 Hs</p>
+          </div>
+
+          <div class="foot-iconos col-sm-12 col-md-6 d-flex foot-div">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-whatsapp foot-icon"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-instagram foot-icon"></i
+            ></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              ><i class="bi iconos bi-geo-alt-fill foot-icon"></i
+            ></a>
+          </div>
+          <div class="foot-copyrigth col-sm-12 col-md-6 d-flex foot-div mt-2">
+            <p class="foot-fuente">Copyright © 2023 by Brenda Laxagueborde</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
