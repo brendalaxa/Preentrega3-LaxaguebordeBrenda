@@ -47,7 +47,7 @@
   color: rgba(248, 145, 159, 0.87) 1;
 }
 
-.whatsup-fixed {
+.whatsapp-fixed {
   position: absolute;
   position: fixed;
   top: 85%;
@@ -55,7 +55,7 @@
   z-index: 10;
 }
 
-.icon-whatsup-fixed {
+.icon-whatsapp-fixed {
   color: #00d162;
   font-size: 35px;
 }
@@ -64,13 +64,13 @@
   background-color: rgba(248, 145, 159, 0.87);
 }
 
-.texto-email {
+.btn-newsletter {
   background-color: rgba(248, 145, 159, 0.87);
+  color: white;
   font-size: 20px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: white;
 }
 
 .big-text {
@@ -85,6 +85,7 @@
 .small-p,
 .big-text {
   color: white;
+  text-align: center;
 }
 
 .newsletter-email {
@@ -113,15 +114,33 @@
   width: 120px;
 }
 
+.modal-nombre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal-cantidad {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 .modal-precio {
   display: inline-block;
   left: 70%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .img-modal img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.total {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .buscador {
@@ -141,7 +160,7 @@
   background-color: white;
 }
 
-.btn {
+.btn-link {
   color: black;
 }
 
@@ -215,14 +234,14 @@
   .header-cart i {
     font-size: 1.8rem;
   }
-  .link-remeras {
+  .link-maquillaje {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 95%));
   }
   .newsletter-email {
     width: 95%;
     margin: 0 auto;
   }
-  .icon-whatsup-fixed {
+  .icon-whatsapp-fixed {
     font-size: 25px;
   }
   .buscador {
@@ -248,7 +267,7 @@
   .carousel-item {
     height: 40vh;
   }
-  .whatsup-fixed {
+  .whatsapp-fixed {
     left: 85%;
   }
   .header-registrarse,
@@ -269,7 +288,7 @@
   }
 }
 .container-foot {
-  background-color: rgba(248, 145, 159, 0.87);
+  background-color: white;
 }
 
 .foot-fuente {

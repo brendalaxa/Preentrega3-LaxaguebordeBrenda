@@ -1,0 +1,82 @@
+[
+  {
+    "id": 10,
+    "stock": 10,
+    "nombre": "Serum Rose",
+    "descripcion": "Serum antioxidante con vitamina c",
+    "precio": 15000,
+    "imagen": "../imagenes/serum.jpg"
+  },
+  {
+    "id": 1,
+    "stock": 10,
+    "nombre": "Rubor Milena",
+    "descripcion": "Rubor en polvo con forma de corazon",
+    "precio": 7000,
+    "imagen": "./imagenes/corazon rubor.jpg"
+  },
+  {
+    "id": 2,
+    "stock": 10,
+    "nombre": "Piedra y Rodillo de Cuarzo Rosa",
+    "descripcion": "Piedra y rodillo para skincare",
+    "precio": 6000,
+    "imagen": "../imagenes/piedra de cuarzo rosa y rodillo.jpg"
+  },
+  {
+    "id": 3,
+    "stock": 10,
+    "nombre": "Crema Hidratante Facial Watermelon",
+    "descripcion": "Crema hidratante facial con acido hialuronico",
+    "precio": 10000,
+    "imagen": "../imagenes/crema hidratante.jpg"
+  },
+  {
+    "id": 4,
+    "stock": 10,
+    "nombre": "Balsamo Labial",
+    "descripcion": "Balsamo labial de coco maxima hidratacion",
+    "precio": 3000,
+    "imagen": "../imagenes/Bálsamo Labial Exfoliante - COCO.jpg"
+  },
+  {
+    "id": 5,
+    "stock": 10,
+    "nombre": "Brochas Doja",
+    "descripcion": "Brochas aterciopeladas",
+    "precio": 10000,
+    "imagen": "../imagenes/brochas.jpg"
+  },
+  {
+    "id": 6,
+    "stock": 10,
+    "nombre": "Sombras Venus Nude",
+    "descripcion": "Sombras nude de alta cobertura",
+    "precio": 5000,
+    "imagen": "../imagenes/sombras.jpg"
+  },
+  {
+    "id": 7,
+    "stock": 10,
+    "nombre": "Labiales Anastasia",
+    "descripcion": "Labiales Nude Matte ",
+    "precio": 16000,
+    "imagen": "../imagenes/labiales nude.jpg"
+  },
+  {
+    "id": 8,
+    "stock": 10,
+    "nombre": "Cartera Arianna",
+    "descripcion": "Mini Bag blanca con bolsillo interno",
+    "precio": 18000,
+    "imagen": "../imagenes/accesorios.jpg"
+  },
+  {
+    "id": 9,
+    "stock": 10,
+    "nombre": "Cartera Diana",
+    "descripcion": "Cartera celeste con interior de terciopelo",
+    "precio": 16000,
+    "imagen": "../imagenes/accesorios 1.jpg"
+  }
+]

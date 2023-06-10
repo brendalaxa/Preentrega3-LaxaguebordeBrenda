@@ -60,7 +60,7 @@ const productos = [
     stock: 10,
     nombre: "Labiales Anastasia",
     descripcion: "Labiales Nude Matte ",
-    precio: 3000,
+    precio: 16000,
     imagen: "../imagenes/labiales nude.jpg",
   },
   {

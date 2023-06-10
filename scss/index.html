@@ -32,7 +32,7 @@
   <body>
     <header class="header-bg">
       <div class="header-envios">
-        Envios sin cargo desde 20.000 pesos - <span class="nros">3</span> y
+        Envios sin cargo desde 30.000 pesos - <span class="nros">3</span> y
         <span class="nros">6</span> cuotas sin interes
       </div>
 
@@ -44,7 +44,7 @@
         /></a>
 
         <div class="header-registro">
-          <a class="header-registrarse me-1" href="#news-email">REGISTRARSE</a>
+          <a class="header-registrarse me-1" href="#">REGISTRARSE</a>
           <a class="header-iniciarSesion ms-1" href="#">INICIAR SESION</a>
 
           <button
@@ -80,7 +80,27 @@
                 <div class="modal-body">
                   <h5 class="modal-vacio">Su carrito esta vacio</h5>
                   <div class="producto-modal">
-                    <!-- ------aca va el carrito  ---------->
+                    <!-- <div class="row-card row">
+                                        <div class="col-4">
+                                            <img src="#" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="modal-nombre"></p>
+                                            <p class="modal-precio  position-absolute ">precio: </p>
+                                            <div class="input-group achicar mb-3">
+                                                <button type="button" id="restar-cantidad" class="btn btn-link"><i
+                                                        class="bi bi-dash"></i></button>
+                                                <h5 class="modal-cantidad"></h5>
+                                                <button type="button" id="sumar-cantidad" class="btn btn-link"><i
+                                                        class="bi bi-plus"></i></button>
+                                            </div>
+                                            <button type="button" id=""
+                                                class="btn position-absolute top-0 end-0 btn-link">
+                                                <i class="bi bi-trash btn-eliminar"></i>
+                                            </button>
+                                        </div>
+                                        
+                                    </div> -->
                   </div>
                   <div class="total">Subtotal:</div>
                 </div>
@@ -88,7 +108,6 @@
                   <button
                     type="button"
                     class="btn vaciado btn-secondary"
-                    id="fin"
                     data-bs-dismiss="modal"
                   >
                     Vaciar carrito
@@ -141,9 +160,9 @@
       </nav>
     </header>
     <main>
-      <!-- whatsapp -->
+      <!-- whatsup -->
       <a
-        class="whatsapp-fixed"
+        class="whatsup-fixed"
         href="https://wa.me/5491136254764"
         target="_blank"
         ><i class="bi icon-whatsup-fixed bi-whatsapp"></i
@@ -283,19 +302,16 @@
           disfrutarlas!
         </p>
 
-        <div class="input-group newsletter-email">
+        <div class="input-group newsletter-email input-group-lg">
+          <span class="input-group-text texto-email" id="inputGroup-sizing-lg"
+            >Email</span
+          >
           <input
             type="text"
-            class="form-control"
-            id="news-email"
-            placeholder="Ingrese su email"
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
+            class="form-control email"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
           />
-
-          <button class="btn btn-newsletter" type="button" id="btn-news">
-            Enviar
-          </button>
         </div>
       </section>
     </main>
@@ -334,6 +350,6 @@
     ></script>
 
     <!-- script javaScript -->
-    <script src="./app/app.js"></script>
+    <script src="app/app.js"></script>
   </body>
 </html>
